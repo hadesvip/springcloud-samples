@@ -1,0 +1,42 @@
+spring:
+  application:
+    name: eureka-client
+  mandatory-file-encoding: utf-8
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+logging:
+  level:
+    root: info
+  file:
+    max-size: 15MB
+    path: eureka-client.log
+  pattern:
+    dateformat: yyyy-MM-dd HH:mm:ss.SSS
+server:
+  port: 9090
+  undertow:
+    accesslog:
+      enabled: true
+      dir: undertow-access-logs
+      pattern: common
+      rotate: true
+      prefix: eureka-client-access-log.
+      suffix: log
+management:
+  endpoints:
+    web:
+      exposure:
+        exclude: '*'
+  endpoint:
+    shutdown:
+      enabled: true
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/,

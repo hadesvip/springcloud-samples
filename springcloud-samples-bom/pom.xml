@@ -10,6 +10,7 @@
 
     <name>springcloud-samples-bom</name>
     <url>http://www.example.com</url>
+    <packaging>pom</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

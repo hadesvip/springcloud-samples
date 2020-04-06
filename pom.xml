@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>springcloud-samples-bom</module>
+        <module>eureka-samples</module>
     </modules>
     <packaging>pom</packaging>
 
