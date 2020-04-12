@@ -11,7 +11,8 @@ logging:
     root: info
   file:
     max-size: 15MB
-    path: service-register-center.log
+    name: service-register-center.log
+    path: logs
   pattern:
     dateformat: yyyy-MM-dd HH:mm:ss.SSS
 server:
