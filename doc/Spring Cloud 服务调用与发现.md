@@ -104,5 +104,50 @@ Spring Cloud Open Feign 是通过Java 接口的方式来声明REST服务提供�
    }
    ```
 
-   
+
+
+
+
+
+## 常见的 SpringBoot/Spring Cloud 中的坑
+
+1.  **@value("server.port")**  服务端端口不一定靠谱，当server.port=0时
+
+2.  **@LocalServerPort** 也不靠谱，因为在注入阶段"local..server.port" 不一定存在
+
+3.  Spring Cloud + Netflix Ribbon 有一个30秒的延迟
+
+   ![image-20200414205530611](C:\Users\wangyong\AppData\Roaming\Typora\typora-user-images\image-20200414205530611.png)
+
+
+
+spring cloud 服务调用
+
+* 服务发现 DiscoveryClient (Erueka,zk,consul等)
+* 负载均衡-Netfix Ribbon （唯一选择）
+* Fegin(唯一选择)
+
+
+
+
+
+## Spring Cloud OpenFeign 实现细节
+
+### @EnableFeignClients
+
+实现策略: Enable模块驱动
+
+具体实现:  ``org.springframework.cloud.openfeign.FeignClientsRegistrar``
+
+主要工作: 
+
+* 注册默认配置
+
+*  注册所有标注`` @FeignClient`` 默认类
+
+   源码位置：``org.springframework.cloud.openfeign.FeignClientsRegistrar#registerFeignClients`` 
+
+  ​	
+
+
 
