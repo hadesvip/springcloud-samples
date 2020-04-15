@@ -58,6 +58,7 @@ Spring Cloud Open Feign 是通过Java 接口的方式来声明REST服务提供�
 * Feign请求和响应的内容是如何序列化和反序列化对应的POJO的
 
 ### Feign
+``https://github.com/openfeign/feign``
 
 #### 注解支持
 
@@ -117,7 +118,7 @@ Spring Cloud Open Feign 是通过Java 接口的方式来声明REST服务提供�
 
 3.  Spring Cloud + Netflix Ribbon 有一个30秒的延迟
 
-   ![image-20200414205530611](C:\Users\wangyong\AppData\Roaming\Typora\typora-user-images\image-20200414205530611.png)
+   ![image-20200414205530611](images\image-20200414205530611.png)
 
 
 
