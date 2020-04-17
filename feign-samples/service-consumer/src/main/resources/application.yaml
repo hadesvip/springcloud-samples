@@ -1,6 +1,6 @@
 spring:
   application:
-    name: discovery-client
+    name: service-consumer
   cloud:
     zookeeper:
       enabled: false #zookeeper服务发现与注册失效(默认)

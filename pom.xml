@@ -10,6 +10,7 @@
     <modules>
         <module>springcloud-samples-bom</module>
         <module>eureka-samples</module>
+        <module>feign-samples</module>
     </modules>
     <packaging>pom</packaging>
 
