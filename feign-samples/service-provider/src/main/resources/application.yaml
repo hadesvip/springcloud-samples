@@ -1,6 +1,6 @@
 spring:
   application:
-    name: service-consumer
+    name: service-provider
   cloud:
     zookeeper:
       enabled: true
@@ -16,19 +16,19 @@ logging:
     root: info
   file:
     max-size: 15MB
-    name: service-consumer.log
+    name: service-provider.log
     path: logs
   pattern:
     dateformat: yyyy-MM-dd HH:mm:ss.SSS
 server:
-  port: 9092
+  port: 0
   undertow:
     accesslog:
       enabled: true
       dir: undertow-access-logs
       pattern: common
       rotate: true
-      prefix: service-consumer-access-log.
+      prefix: service-provider-access-log.
       suffix: log
 management:
   endpoints:
