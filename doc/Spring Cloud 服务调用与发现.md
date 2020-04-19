@@ -147,7 +147,8 @@ spring cloud 服务调用
 *  注册所有标注`` @FeignClient`` 默认类
 
    源码位置：``org.springframework.cloud.openfeign.FeignClientsRegistrar#registerFeignClients`` 
-
+     
+     ![registerFeignClients](./images/registerFeignClients.png)   
   ​	
 
 
